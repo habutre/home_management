@@ -10,10 +10,11 @@ defmodule CategoryTest do
 
     test "expects a subcategory to be a Category type" do
       sub_category = %Category{name: "Drink", sub_category: %{}}
-      category = %Category{name: "Food", sub_category: sub_category}
+      category = %Category{name: "Feeding", sub_category: sub_category}
 
-      assert "Food" == category.name
+      assert "Feeding" == category.name
       assert "Drink" == category.sub_category.name
     end
+
   end
 end
